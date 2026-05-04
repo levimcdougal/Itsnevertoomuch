@@ -928,7 +928,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  align-items: start;
 }
 
 .pricing-toggle {
@@ -1034,7 +1033,6 @@
 .addon-grid {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  align-items: start;
 }
 
 .services-two-col {
@@ -1696,11 +1694,7 @@
     display: none;
   }
 
-  .topbar-contacts {
-    gap: 14px;
-  }
-
-  .topbar-right {
+  .topbar {
     display: none;
   }
 
