@@ -928,6 +928,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  align-items: start;
 }
 
 .pricing-toggle {
@@ -1033,6 +1034,7 @@
 .addon-grid {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  align-items: start;
 }
 
 .services-two-col {
@@ -1702,8 +1704,21 @@
     display: none;
   }
 
+  .navbar {
+    height: 68px;
+  }
+
+  .navbar-inner {
+    padding: 0 16px;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
   .navbar-logo-img {
-    height: 64px;
+    height: 52px;
   }
 
   .navbar-links {
@@ -1728,6 +1743,12 @@
   .navbar-links a {
     width: 100%;
     padding: 12px 16px;
+  }
+
+  .navbar-book-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px !important;
   }
 
   .navbar-mobile-toggle {
