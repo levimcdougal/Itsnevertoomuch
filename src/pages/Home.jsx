@@ -18,21 +18,21 @@ const previewServices = [
 
 const reviews = [
   {
-    name: 'Customer Name',
-    location: 'City, State',
-    text: 'Add your review here. Tell us what you loved about the service and how it made a difference in your home.',
+    name: 'Marshawnna Davis',
+    location: '6 weeks ago',
+    text: 'Maricela and her helper did AMAZING, I will definitely be using them again!!',
     stars: 5,
   },
   {
-    name: 'Customer Name',
-    location: 'City, State',
-    text: 'Add your review here. Tell us what you loved about the service and how it made a difference in your home.',
+    name: 'Simone Morgan',
+    location: '11 weeks ago',
+    text: 'Excellent work, good prices, and super friendly will be using again!',
     stars: 5,
   },
   {
-    name: 'Customer Name',
-    location: 'City, State',
-    text: 'Add your review here. Tell us what you loved about the service and how it made a difference in your home.',
+    name: 'Austin Bailey',
+    location: 'Oct 19, 2024',
+    text: 'Very professional and communicative. Will book services again and refer to friends!',
     stars: 5,
   },
 ]
