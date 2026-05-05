@@ -337,7 +337,7 @@ const addOns = [
 
 function ServiceCard({ s }) {
   return (
-    <div className="service-full-card" style={s.centered ? { gridColumn: '2' } : undefined}>
+    <div className={`service-full-card${s.centered ? ' service-card-centered' : ''}`}>
       <div className={`service-full-img ${s.grad}`}>
         <s.Icon size={52} strokeWidth={1.5} color={s.color} />
       </div>
