@@ -1347,6 +1347,12 @@
   background: var(--off-white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  min-width: 0;
+}
+
+.contact-main-text {
+  min-width: 0;
+  flex: 1;
 }
 
 .contact-main-icon {
@@ -1376,6 +1382,8 @@
   font-weight: 700;
   color: var(--text-dark);
   text-decoration: none;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contact-main-value:hover {
