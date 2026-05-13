@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BrushCleaning, Sparkles, Package, Home, Armchair, HardHat, LayoutGrid, Clock, Microwave, WashingMachine, Blinds, ChevronDown } from 'lucide-react'
+import { BrushCleaning, Sparkles, Package, Home, Armchair, HardHat, LayoutGrid, Clock, Microwave, WashingMachine, Blinds } from 'lucide-react'
 
 function HouseWindow({ size = 24, strokeWidth = 1.5, color = 'currentColor' }) {
   return (
@@ -375,8 +374,6 @@ function ServiceCard({ s }) {
 }
 
 export default function Services() {
-  const [pricingOpen, setPricingOpen] = useState(false)
-
   return (
     <div className="page-content">
 
@@ -400,46 +397,6 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section pricing-section">
-        <div className="section-inner">
-          <div className="section-header">
-            <span className="section-tag">Pricing</span>
-            <h2 className="section-title">Service <span>Pricing</span></h2>
-            <p className="section-subtitle">Flat-rate pricing based on the size of your home. No hidden fees.</p>
-          </div>
-          <div className="pricing-table-wrap">
-            <table className="pricing-table">
-              <thead>
-                <tr>
-                  <th>Beds / Baths</th>
-                  <th>Standard Cleaning</th>
-                  <th>Deep Cleaning</th>
-                  <th>Move In / Move Out</th>
-                </tr>
-              </thead>
-              <tbody>
-                {(pricingOpen ? pricing : pricing.slice(0, 5)).map((row) => (
-                  <tr key={row.beds}>
-                    <td className="beds-cell">{row.beds}</td>
-                    <td>{row.standard}</td>
-                    <td>{row.deep}</td>
-                    <td>{row.moveOut}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <button
-            className="pricing-toggle"
-            onClick={() => setPricingOpen(!pricingOpen)}
-          >
-            <span className="pricing-toggle-title">
-              {pricingOpen ? 'Show Less' : 'Show More'}
-            </span>
-            <ChevronDown size={22} strokeWidth={2} className={`pricing-chevron ${pricingOpen ? 'open' : ''}`} />
-          </button>
-        </div>
-      </section>
 
       <section className="section">
         <div className="section-inner section-inner--wide">
@@ -461,7 +418,7 @@ export default function Services() {
       <section className="cta-banner">
         <div className="cta-banner-inner">
           <h2>Not Sure Which Service You Need?</h2>
-          <p>Reach out and we'll help you find the right cleaning solution for your space and budget.</p>
+          <p style={{ whiteSpace: 'nowrap' }}>Reach out and we'll help you find the right cleaning solution for your space and budget.</p>
           <div className="cta-banner-actions">
             <Link to="/contact" className="btn btn-accent">
               Contact Us Today
